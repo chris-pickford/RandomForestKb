@@ -1,0 +1,15 @@
+Template Repository
+
+To create a new repository from this template on git open git bash:
+
+Create the new repo on github first (empty one)
+
+$ cd <local directory to add new repo>
+$ git clone –bare https://github.com/chrisPickford1/Template.git
+$ cd old-repository.git
+$ git push --mirror https://github.com/chrisPickford1/<New project / repo name>
+$ cd ..
+$ rm -rf Template.git
+$ git clone https://github.com/chrisPickford1/<New project / repo name>
+
+This will create a new folder from the template with all the associated files, but will be named as the new project and also will have the correct git associations for the new project.
