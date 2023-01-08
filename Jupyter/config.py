@@ -12,6 +12,20 @@ elif OS == 'Local':
 
 from DataCrane.config import config
 
+config.googleServiceAccountPrivateKey = os.path.join(os.path.expanduser('~')
+                                                          , os.path.sep
+                                                          , 'Users'
+                                                          , 'chrispickford'
+                                                          , 'Documents'
+                                                          , 'Coding'
+                                                          , 'Python'
+                                                          , 'Datascience'
+                                                          , 'PRIVATE KEYS'
+                                                          , 'Google'
+                                                          , 'Datascience Service Account'
+                                                          , 'privateKey.json'
+                                                          )
+
 SqlVarReplacements = {
     '@StartDate': '2018-09-01',
     '@EndDate': '2018-10-01',
